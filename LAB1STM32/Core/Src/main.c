@@ -84,7 +84,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
-
+  int counter=0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -92,7 +92,9 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  if (counter>=10) counter=0;
+	  display7SEG(counter++);
+	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
