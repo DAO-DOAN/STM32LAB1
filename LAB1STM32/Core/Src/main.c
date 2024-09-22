@@ -84,7 +84,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
-
+  int count=0;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -92,7 +92,11 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	  if (count>=12){
+		  count==0;
+	  }
+	  setNumberOnClock(count++);
+	  HAL_Delay(1000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
